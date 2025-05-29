@@ -1,0 +1,19 @@
+
+
+.hero-section {
+  height: 80vh;
+  border: 5px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.hero-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 10rem;
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
