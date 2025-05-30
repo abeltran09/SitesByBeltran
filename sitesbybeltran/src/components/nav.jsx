@@ -29,7 +29,8 @@ export default function Nav() {
           </div>
           
           <div className="hidden lg:flex lg:gap-x-12 lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2">
-            <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Services</a>
+            <a href="/" className="text-sm font-semibold leading-6 text-gray-900">Home</a>
+            <a href="/services" className="text-sm font-semibold leading-6 text-gray-900">Services</a>
             <a href="#" className="text-sm font-semibold leading-6 text-gray-900">About</a>
             <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Portfolio/Projects</a>
             <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Contact</a>
@@ -63,7 +64,8 @@ export default function Nav() {
               <div className="mt-6 flow-root">
                 <div className="-my-6 divide-y divide-gray-500/10">
                   <div className="space-y-2 py-6">
-                    <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Services</a>
+                    <a href="/" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Home</a>
+                    <a href="/services" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Services</a>
                     <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">About</a>
                     <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Portfolio/Projects</a>
                     <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Contact</a>
