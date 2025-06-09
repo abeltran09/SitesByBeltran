@@ -1,7 +1,7 @@
 export default function About() {
     return(
         <div className="bg-white">
-            <div className="relative isolate px-6 pt-14 lg:px-8">
+            <div className="pt-30 relative isolate px-6 pt-14 lg:px-8">
                 {/* Top gradient background */}
                 <div className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
                     <div 

@@ -3,49 +3,32 @@ import ServiceCard from "../components/service_card";
 export default function Service() {
     const servicePlans = [
     {
-      title: "Basic Package",
-      one_time_price: "350",
-      monthly_price: "80",
+      title: "Monthly Package",
+      one_time_price: "0",
+      monthly_price: "150",
       features: [
-        { name: "Full Custom Web Design", included: true },
-        { name: "1 Page Layout", included: true },
-        { name: "Mobile Responsive Design", included: true },
-        { name: "Hosting Setup", included: true },
-        { name: "Choose Web Name", included: true },
-        { name: "Contact Form", included: true },
-        { name: "3 Month Basic Support", included: true },
-      ],
-      buttonText: "Choose Plan"
-    },
-    {
-      title: "Standard Package",
-      one_time_price: "650",
-      monthly_price: "80",
-      features: [
-        { name: "Full Custom Web Design", included: true },
-        { name: "Up to 5 page Layout", included: true },
+        { name: "Custom Website Design", included: true },
+        { name: "Hosting Included", included: true },
+        { name: "Unlimited Edits", included: true },
+        { name: "24/7 support", included: true },
         { name: "Mobile-Responsive", included: true },
-        { name: "Hosting Setup", included: true },
-        { name: "Contact Form", included: true },
-        { name: "SEO Optimization", included: true },
-        { name: "6 Months  of Support", included: true }
+        { name: "Full Ownership of Website", included: false },
       ],
-      buttonText: "Choose Plan"
+      buttonText: "More Details"
     },
     {
-      title: "Premium Package",
-      one_time_price: "950",
-      monthly_price: "80",
+      title: "One-Time/Hosting Package",
+      one_time_price: "1500",
+      monthly_price: "25",
       features: [
-        { name: "Full Custom Web Design", included: true },
-        { name: "Unlimited Number of Pages", included: true },
-        { name: "Mobile-Responisive", included: true },
-        { name: "Contact Forms", included: true },
-        { name: "Google Analytics Setup", included: true },
-        { name: "SEO Setup", included: true },
-        { name: "1-Year of Support", included: true }
+        { name: "Custom Website Design", included: true },
+        { name: "Hosting Included", included: true },
+        { name: "Basic SEO Optimization", included: true },
+        { name: "Edit Support Available ($50/hr)", included: true },
+        { name: "Mobile-Responsive", included: true },
+        { name: "Full Ownership of Website", included: true },
       ],
-      buttonText: "Choose Plan"
+      buttonText: "More Details"
     }
   ];
 
@@ -59,17 +42,19 @@ export default function Service() {
           ></div>
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-12 sm:py-16 lg:py-20">
+            <div className="flex justify-center py-12 sm:py-16 lg:py-20">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl">
                 {servicePlans.map((plan, index) => (
                     <ServiceCard
-                        key={index}
-                        title={plan.title}
-                        one_time_price={plan.one_time_price}
-                        monthly_price={plan.monthly_price}
-                        features={plan.features}
-                        buttonText={plan.buttonText} />
+                    key={index}
+                    title={plan.title}
+                    one_time_price={plan.one_time_price}
+                    monthly_price={plan.monthly_price}
+                    features={plan.features}
+                    buttonText={plan.buttonText} 
+                    />
                 ))}
-                
+                </div>
             </div>
         </div>
       </div>
