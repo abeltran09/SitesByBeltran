@@ -74,6 +74,7 @@ export default function RestaurantLanding() {
               <a href="#menu" className="hover:text-purple-400 transition-colors">Menu</a>
               <a href="#about" className="hover:text-purple-400 transition-colors">About</a>
               <a href="#contact" className="hover:text-purple-400 transition-colors">Contact</a>
+              <a href="/" className="hover:text-purple-400 transition-colors">Go Back To SitesByBeltran</a>
             </div>
           </div>
         </nav>

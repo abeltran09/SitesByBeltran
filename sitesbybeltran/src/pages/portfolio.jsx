@@ -16,7 +16,7 @@ export default function Portfolio() {
     {
       id: 2,
       title: "PrimeCuts",
-      description: "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
+      description: "A mock website landing page design meant for a barbershop. Has cool and fancy animations,",
       image: "./images/primecuts-logo.png",
       technologies: ["React", "Firebase", "Material-UI", "Socket.io"],
       liveUrl: "/primecuts",

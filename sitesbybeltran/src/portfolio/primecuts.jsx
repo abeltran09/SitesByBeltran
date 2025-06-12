@@ -44,6 +44,7 @@ export default function BarbershopLanding() {
               <a href="#services" className="hover:text-amber-400 transition-colors duration-300">Services</a>
               <a href="#about" className="hover:text-amber-400 transition-colors duration-300">About</a>
               <a href="#contact" className="hover:text-amber-400 transition-colors duration-300">Contact</a>
+              <a href="/" className="hover:text-amber-400 transition-colors duration-300">Go Back To SitesByBeltran</a>
             </div>
 
             <button
@@ -63,6 +64,7 @@ export default function BarbershopLanding() {
               <a href="#services" className="block px-3 py-2 hover:text-amber-400 transition-colors">Services</a>
               <a href="#about" className="block px-3 py-2 hover:text-amber-400 transition-colors">About</a>
               <a href="#contact" className="block px-3 py-2 hover:text-amber-400 transition-colors">Contact</a>
+              <a href="/" className="block px-3 py-2 hover:text-amber-400 transition-colors">Go Back To SitesByBeltran</a>
             </div>
           </div>
         )}
