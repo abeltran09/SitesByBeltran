@@ -24,9 +24,10 @@ export default function ServiceDetailsPage() {
     ],
     specifications: {
       "Development Time": "1-2 weeks",
-      "Revisions Included": "3 major revisions",
+      "Initial Consultation": "1 strategy call (30-60 mins)",
+      "Design Mockups": "Landing Page mockup for approval",
       "Pages Included": "Up to 10 pages",
-      "Technology Stack": "",
+      "Browser Compatibility": "Tested on major browsers (Chrome, Firefox, Safari, Edge)",
       "Hosting Setup": "Included",
       "Domain Registration": "Included (.com domain)"
     }
@@ -185,6 +186,7 @@ export default function ServiceDetailsPage() {
             </button>
             <button 
               type="button" 
+              onClick={() => navigate('/contact')} 
               className="text-rose-600 bg-white border border-rose-600 hover:bg-rose-50 focus:ring-4 focus:outline-none focus:ring-rose-200 font-medium rounded-lg text-sm px-6 py-3 shadow-sm hover:shadow-md transition-all"
             >
               Schedule Consultation

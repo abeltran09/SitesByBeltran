@@ -3,9 +3,9 @@ import { PhoneCall, Mail } from 'lucide-react';
 
 export default function ContactInfo() {
   return (
-    <div className="flex gap-3 p-4 justify-center">
+    <div className="grid grid gap-3 p-4 justify-center">
       {/* Phone Bubble */}
-      <div className="flex items-center gap-2 bg-rose-200 hover:bg-rose-100 transition-colors duration-200 rounded-full px-4 py-2 shadow-sm">
+      <div className="flex items-center gap-1 bg-rose-200 hover:bg-rose-100 transition-colors duration-200 rounded-full px-4 py-2 shadow-sm">
         <PhoneCall className="w-4 h-4" />
         <span className="text-sm text-gray-800 transition-colors">
           +1 (281)-763-0915
@@ -13,7 +13,7 @@ export default function ContactInfo() {
       </div>
 
       {/* Email Bubble */}
-      <div className="flex items-center gap-2 bg-rose-200 hover:bg-rose-100 transition-colors duration-200 rounded-full px-4 py-2 shadow-sm">
+      <div className="flex items-center gap-1 bg-rose-200 hover:bg-rose-100 transition-colors duration-200 rounded-full px-4 py-2 shadow-sm">
         <Mail className="w-4 h-4" />
         <span className="text-sm text-gray-800 transition-colors">
           aabeltran5910@gmail.com
