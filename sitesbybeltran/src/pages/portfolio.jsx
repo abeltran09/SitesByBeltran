@@ -50,7 +50,7 @@ export default function Portfolio() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="text-center">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 text-gray-800 tracking-tight">
-              My <span className="bg-gradient-to-r bg-gradient-to-r from-rose-500 to-rose-600
+              My <span className="bg-gradient-to-r bg-gradient-to-r from-[#D5451B] to-[#C5172E]
                  bg-clip-text text-transparent">Portfolio</span>
             </h1>
             <p className="text-xl max-w-3xl mx-auto leading-relaxed text-gray-600">
@@ -62,13 +62,13 @@ export default function Portfolio() {
 
       {/* Projects Grid */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24">
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+        <div className="grid mobile:grid-cols-1 sm:grid-cols-2 md:grid-cols-2 tablet:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div
               key={project.id}
-              className={`group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 hover:shadow-rose-500/20 border border-gray-200 hover:border-rose-300 ${
-                project.featured ? 'lg:col-span-2 xl:col-span-1' : ''
-              }`}
+              className={`group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 hover:shadow-[#C5172E]/20 border border-gray-200 hover:border-rose-300 mobile:max-w-110 mobile:mx-auto ${
+                project.featured ? 'lg:col-span-2 xl:col-span-1' : ''}
+                `}
             >
               {/* Project Image */}
               <div className="relative h-48 overflow-hidden">
@@ -82,7 +82,7 @@ export default function Portfolio() {
                 {/* Featured Badge */}
                 {project.featured && (
                   <div className="absolute top-4 left-4">
-                    <span className="bg-gradient-to-r from-rose-400 to-rose-500 text-white px-3 py-1 rounded-full text-sm font-medium shadow-md">
+                    <span className="bg-gradient-to-r from-[#D5451B] to-[#C5172E] text-white px-3 py-1 rounded-full text-sm font-medium shadow-md">
                       Featured
                     </span>
                   </div>
@@ -116,7 +116,7 @@ export default function Portfolio() {
                     href={project.liveUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 bg-gradient-to-r from-rose-500 to-rose-600 hover:from-rose-500 hover:to-rose-600 text-white px-6 py-3 rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-rose-500/25 group/btn"
+                    className="flex items-center gap-2 bg-gradient-to-r from-[#D5451B] to-[#C5172E] hover:from-[#C5172E] to-[#D5451B] text-white px-6 py-3 rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-rose-500/25 group/btn"
                   >
                     <Globe size={18} />
                     <span className="font-medium">Live Demo</span>
@@ -142,7 +142,7 @@ export default function Portfolio() {
             </p>
             <a
               href="/contact"
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-rose-500 to-rose-600 hover:from-rose-500 hover:to-rose-600 text-white px-8 py-4 rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-rose-500/25 font-medium text-lg"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-[#D5451B] to-[#C5172E] hover:from-[#C5172E] to-[#D5451B] text-white px-8 py-4 rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-rose-500/25 font-medium text-lg"
             >
               Get In Touch
               <ExternalLink size={20} />
