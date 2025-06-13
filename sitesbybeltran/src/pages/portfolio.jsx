@@ -6,7 +6,7 @@ export default function Portfolio() {
     {
       id: 1,
       title: "Bella Vista",
-      description: "A sample website design mean for a reasteraunt. Features landing page and cool fancy animations.",
+      description: "A sample website design for a restaurant called Bella Vista, featuring an elegant landing page and smooth, modern animations for a luxurious dining experience",
       image: "./images/bellavista-logo-main.jpg",
       technologies: ["React", "Node.js", "MongoDB", "Stripe"],
       liveUrl: "/bellavista",
@@ -16,7 +16,7 @@ export default function Portfolio() {
     {
       id: 2,
       title: "PrimeCuts",
-      description: "A mock website landing page design meant for a barbershop. Has cool and fancy animations,",
+      description: "A mock landing page design for a modern barbershop, featuring sleek visuals and stylish animations to create a bold, high-end first impression.",
       image: "./images/primecuts-logo-main.jpg",
       technologies: ["React", "Firebase", "Material-UI", "Socket.io"],
       liveUrl: "/primecuts",
@@ -26,7 +26,7 @@ export default function Portfolio() {
     {
       id: 3,
       title: "Luxe Nails",
-      description: "A responsive weather dashboard that displays current conditions, forecasts, and interactive maps using multiple weather APIs.",
+      description: "A mock landing page design for Luxe Nails, a premium nail salon, featuring elegant design elements and smooth, luxurious animations that highlight beauty, style, and sophistication.",
       image: "./images/luxenails-logo-main.jpg",
       technologies: ["React", "Chart.js", "OpenWeather API", "Mapbox"],
       liveUrl: "/luxenails",
