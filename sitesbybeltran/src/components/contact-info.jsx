@@ -16,7 +16,7 @@ export default function ContactInfo() {
       <div className="flex items-center gap-1 bg-rose-200 hover:bg-rose-100 transition-colors duration-200 rounded-full px-4 py-2 shadow-sm">
         <Mail className="w-4 h-4" />
         <span className="text-sm text-gray-800 transition-colors">
-          aabeltran5910@gmail.com
+          sitesbybeltran@gmail.com
         </span>
       </div>
     </div>
