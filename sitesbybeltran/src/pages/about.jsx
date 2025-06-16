@@ -56,7 +56,7 @@ export default function About() {
                             </div>
                         </div>
                     </div>
-                    <div className="grid grid-cols-2 gap-3 sm:gap-4">
+                    <div className="grid grid-cols-2 gap-3 sm:gap-4 pb-16">
                         <div className="transform hover:scale-105 transition-transform duration-300">
                             <img className="w-full rounded-lg shadow-lg" src="./images/about-1.png" alt="Web design showcase 1" />
                         </div>
