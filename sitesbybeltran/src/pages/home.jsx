@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet';
 import { ArrowRight, Code, Zap, Shield, Smartphone, Search, TrendingUp } from 'lucide-react';
 
 export default function Home() {
@@ -46,6 +47,21 @@ export default function Home() {
 
   return (
     <div className="bg-white">
+      <Helmet>
+        {/* Canonical URL for homepage */}
+        <link rel="canonical" href="https://www.sitesbybeltran.com/" />
+        
+        {/* Optional: You can also set other SEO meta tags here */}
+        <title>SitesByBeltran | Custom Web Design for Businesses</title>
+        <meta name="description" content="Professional web design for businesses. Mobile-friendly, SEO-optimized, and tailored to your brand. Based in Houston, Texas." />
+        
+        {/* Open Graph tags can also be managed here */}
+        <meta property="og:title" content="SitesByBeltran | Custom Web Design for Businesses" />
+        <meta property="og:description" content="Professional web design for businesses. Mobile-friendly, SEO-optimized, and tailored to your brand." />
+        <meta property="og:url" content="https://www.sitesbybeltran.com/" />
+        <meta property="og:type" content="website" />
+      </Helmet>
+
       {/* Hero Section */}
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">

@@ -1,10 +1,16 @@
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 export default function About() {
     const navigate = useNavigate();
 
     return(
         <div className="bg-white">
+            <Helmet>
+                <title>About SitesbyBeltran - Custom Web Development & Design</title>
+                <meta name="description" content="Learn about Angel Beltran and SitesbyBeltran - a solo web design & development studio creating custom, modern websites that help businesses stand out online." />
+                <link rel="canonical" href='https://www.sitesbybeltran.com/about/' />
+            </Helmet>
             <div className="pt-30 relative isolate px-6 pt-14 lg:px-8">
                 {/* Top gradient background */}
                 <div className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">

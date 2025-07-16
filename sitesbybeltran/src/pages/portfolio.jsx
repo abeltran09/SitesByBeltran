@@ -1,5 +1,6 @@
 import React from 'react';
 import { ExternalLink, Globe } from 'lucide-react';
+import { Helmet } from 'react-helmet';
 
 export default function Portfolio() {
   const projects = [
@@ -37,6 +38,11 @@ export default function Portfolio() {
 
   return (
     <div className="">
+      <Helmet>
+        <title>Portfolio - SitesbyBeltran | Custom Web Development Projects</title>
+        <meta name="description" content="View Angel Beltran's portfolio of custom web development projects. See examples of responsive websites, modern designs, and web applications built for businesses." />
+        <link rel="canonical" href="https://www.sitesbybeltran.com/portfolio/" />
+     </Helmet>
       {/* Hero Section */}
       <div className="relative overflow-hidden pt-30">
         {/* Top background decoration */}
