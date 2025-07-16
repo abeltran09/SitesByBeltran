@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 export default function ServiceDetailsPage() {
   const [selectedPlan, setSelectedPlan] = useState('one-time');
@@ -35,6 +36,55 @@ export default function ServiceDetailsPage() {
 
   return (
     <div className="pt-30 min-h-screen py-8">
+
+      <Helmet>
+        {/* Canonical URL for service details page */}
+        <link rel="canonical" href="https://www.sitesbybeltran.com/services/" />
+        
+        {/* SEO meta tags */}
+        <title>Premium Web Development Package | SitesByBeltran</title>
+        <meta name="description" content="Complete web development solution with modern design, responsive layout, and advanced functionality. Custom websites starting at $1000. Based in Houston, Texas." />
+        
+        {/* Open Graph tags */}
+        <meta property="og:title" content="Premium Web Development Package | SitesByBeltran" />
+        <meta property="og:description" content="Complete web development solution with modern design, responsive layout, and advanced functionality. Custom websites starting at $1000." />
+        <meta property="og:url" content="https://www.sitesbybeltran.com/services/" />
+        <meta property="og:type" content="product" />
+        
+        {/* Additional SEO tags */}
+        <meta name="keywords" content="web development, custom website, responsive design, SEO optimization, Houston web developer" />
+        <meta name="author" content="SitesByBeltran" />
+        
+        {/* Structured data for better search results */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": serviceData.title,
+            "description": serviceData.description,
+            "provider": {
+              "@type": "Organization",
+              "name": "SitesByBeltran",
+              "url": "https://www.sitesbybeltran.com"
+            },
+            "offers": [
+              {
+                "@type": "Offer",
+                "price": serviceData.one_time_price,
+                "priceCurrency": "USD",
+                "description": "One-time payment option"
+              },
+              {
+                "@type": "Offer",
+                "price": serviceData.monthly_price,
+                "priceCurrency": "USD",
+                "description": "Monthly payment option"
+              }
+            ]
+          })}
+        </script>
+      </Helmet>
+
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
          {/* Top background decoration */}
         <div className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">

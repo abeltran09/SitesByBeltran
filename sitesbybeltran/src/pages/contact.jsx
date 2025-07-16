@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Helmet } from 'react-helmet';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -28,6 +29,11 @@ export default function Contact() {
 
   return (
     <div className="bg-white">
+      <Helmet>
+          <title>Contact SitesbyBeltran - Get Your Custom Website Quote</title>
+          <meta name="description" content="Ready to build your custom website? Contact Angel Beltran at SitesbyBeltran for a free consultation and quote on your web development project." />
+          <link rel="canonical" href="https://www.sitesbybeltran.com/contact" />
+      </Helmet>
       <div className="relative isolate px-6 pt-14 lg:px-8">
         {/* Top background decoration */}
         <div className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
